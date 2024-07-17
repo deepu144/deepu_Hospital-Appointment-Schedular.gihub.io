@@ -1,0 +1,135 @@
+@charset "ISO-8859-1";
+body{
+    font-family: 'Times New Roman', Times, serif !important;
+}
+.border-md {
+    border-width: 2px;
+}
+.country_state,.city_pincode{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.Hospital_login_body{
+    margin-top: -50px;
+}
+.header_content_login{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: -220px;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    
+}
+.dob_gender{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Hospital_nav{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    align-items: center;
+    height:100px;
+    /* overflow: hidden; */
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 0;
+    padding-top: 30px;
+    padding-left: -100px;
+}
+.btn-facebook {
+    background: #405D9D;
+    border: none;
+}
+
+.btn-facebook:hover, .btn-facebook:focus {
+    background: #314879;
+}
+
+.btn-twitter {
+    background: #42AEEC;
+    border: none;
+}
+
+.btn-twitter:hover, .btn-twitter:focus {
+    background: #1799e4;
+}
+
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+body {
+    min-height: 100vh;
+}
+
+.form-control:not(select) {
+    padding: 1.5rem 0.5rem;
+}
+
+select.form-control {
+    height: 52px;
+    padding-left: 0.5rem;
+}
+
+.form-control::placeholder {
+    color: #ccc;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+.pop_alert {
+    width: 20rem;
+    height: 50px;
+    background-color:rgb(241, 63, 4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 20px;
+    border-radius: 5px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 18px;
+    top: 120px;
+    animation: statusupdate;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes statusupdate {
+    0% {
+        opacity: 0;
+        right: -100px;
+    }
+    25%{
+        opacity: 1;
+        right: 2vw;
+    }
+    50% {
+        opacity: 1;
+        right: 2vw;
+        
+    }
+    75%{
+        opacity: 1;
+        right: 4vw;
+    }
+    100%{
+        opacity: 0;
+        right: -100px;
+    }
+}

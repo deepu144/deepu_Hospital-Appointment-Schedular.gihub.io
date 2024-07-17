@@ -1,0 +1,219 @@
+@charset "ISO-8859-1";
+.service_details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:  290px !important;
+    background-color: white;
+    /* overflow: hidden; */
+}
+.logo{
+    /* background-color: aqua; */
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+.doctor_info{
+    /* border: 2px solid gray; */
+    padding: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+.doctor_img{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    border-radius: 8px;
+    height: 300px;
+    overflow: hidden;
+    /* width: 100%; */
+     
+}
+.doctor_image{
+    width: 100%;
+}
+.doctor_img img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.doctor_img img:hover {
+    transform: scale(1.1);
+}
+.doctor_details{
+    padding: 5px;
+}
+#doctor_name_id{
+    color: rgba(244, 77, 6, 0.918);
+    font-size: 1.2rem;
+    font-weight: bolder;
+   
+
+}
+.doctor_degree{
+    /* color: rgb(26,118,209); */
+    font-size: 16px;
+}
+.doctor_info_in_getappoinment{
+    height: 250px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  width: 100vw;
+  background-color: rgba(128, 128, 128, 0.066);
+  
+
+}
+.doctor_img_in_getappoinment{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 10vw;
+}
+.doctor_details_in_getappoinment{
+    height: 50%;
+    width: auto;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    justify-content: space-around;
+    padding-left: 10vw;
+    margin-top: -20px;
+}
+ .Postpone{
+    position: absolute;
+    width: 400px !important;
+    height: 300px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+     
+  
+    z-index: 100;
+   
+ }
+ #close_icon{
+    position: relative;
+    right: -180px;
+    font-size: 20px;
+    top: -50px;
+    cursor: pointer;
+ }
+#postpone_name{
+    color: black;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    
+ }
+ .Postpone_div{
+    height: 100%;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-between;
+    /* background-color: aqua; */
+ }
+.postpone_date,.postpone_time{
+    width: max-content;
+}
+.container.Postpone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust as needed */
+    max-width: 400px; /* Adjust as needed */
+    background-color: #fff; /* Adjust as needed */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.Postpone_div {
+    text-align: center;
+}
+
+.postpone_date,
+.postpone_time {
+    margin-bottom: 15px;
+}
+
+/* Media Query for Responsiveness */
+@media screen and (max-width: 768px) {
+    .container.Postpone {
+        width: 90%;
+    }
+}
+.profile_btn{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+}
+.profile_name{
+    text-align: center;
+    font-weight: bolder;
+}
+textarea.form-control {
+	display:flex;
+	justify-content:center;
+    min-height: 38px; /* Adjust height as needed */
+    padding: 6px 12px; /* Adjust padding as needed */
+    padding-top:20px;
+    font-size: 14px; /* Adjust font size as needed */
+    line-height: 1.42857143; /* Adjust line height as needed */
+    color: #555; /* Adjust text color as needed */
+    background-color: #fff; /* Adjust background color as needed */
+    background-image: none;
+    border: 1px solid #ccc; /* Adjust border color and thickness as needed */
+    border-radius: 4px; /* Adjust border radius as needed */
+    resize: none; 
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; /* Adjust transition effect as needed */
+  }
+
+  textarea.form-control:focus {
+    border-color: #66afe9; /* Adjust focus border color as needed */
+    outline: 0; /* Remove focus outline */
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6); /* Adjust focus box shadow as needed */
+  }
+  
+  #saveBtn{
+    display: none;
+  }
+  
+  .dept_name_btn{
+    border: none;
+    background-color: transparent;
+    padding: 15px;
+}
+#PostponeAppointment{
+	display:none;
+}
+
+.doctor_status_update{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Postpone_byDoctor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #c4c3c3; */
+    /* width: 300px; */
+}
+.border_postpone{
+    border: 1px solid gray;
+    padding: 10px 30px 40px 40px;
+    border-radius: 8px;
+}
+.save_btn_to_profile{
+	display:flex;
+	justify-content:end;
+	align-items:center;
+}
